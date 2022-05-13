@@ -26,3 +26,7 @@ target = num
 np.argmin(distances)
 np.argmax(distances)
 '''
+# 공분산 계산 방법
+# np.cov()
+# 단위에 의존하지 않고 상관관계를 이해해야함 -> 상관계수
+
