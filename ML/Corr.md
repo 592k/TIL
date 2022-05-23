@@ -3,6 +3,7 @@
 
 ### 2. 분산(variance)
 - 편차제곱의 평균
+
 $ variance = \frac{\sum_{i=1}^n{(x_i-\bar{x})^2}}{n}, (\bar{x}:평균) $
 
 ```pyton
@@ -23,6 +24,7 @@ np.std(data)
 
 ### 3. 공분산 (covariance)
 - 평균 편차
+
 $ covariance = \frac{\sum_{i=1}^{n}{(x_i-\bar{x})(y_i-\bar{y})}}{n}, (\bar{x}:x의 평균, \bar{y}:y의 평균) $
 
 ```python
