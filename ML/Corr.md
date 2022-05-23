@@ -1,12 +1,10 @@
 # 상관계수 (Correlation Coefficient)
 	import numpy as np
-'''
 
 ### 2. 분산(variance)
 - 편차제곱의 평균
 $ variance = \frac{\sum_{i=1}^n{(x_i-\bar{x})^2}}{n}, (\bar{x}:평균) $
 
-'''python
 
 	def variance(data):
 	
@@ -37,9 +35,7 @@ $ covariance = \frac{\sum_{i=1}^{n}{(x_i-\bar{x})(y_i-\bar{y})}}{n}, (\bar{x}:x�
 		for idx in range(len(data1)):
 			cov += (data1[idx] -x_) * (data2[idx] - y_)
 		return cov / (len(data1) - 1)
-
-
-
+	
 	covariance(data1, data2)
 
 
@@ -74,14 +70,13 @@ $ r = \frac{\sum(x-\bar{x})(y-\bar{y})}{\sqrt{{\sum(x-\bar{x})^2}\cdot{\sum(y-\b
 
 	import pandas as pd
 	
-	# multiole columns dataframe -> corr -> 각 컬럼별 상관관계를 구할 수 있습니다
+	# multiple columns dataframe -> corr -> 각 컬럼별 상관관계를 구할 수 있습니다
 	df1.corrwith(df2))
 
 
 ### 5. 결정계수 (cofficient of determination : R-squared)
 - 상관계수의 제곱
 - 클 수록 회귀분석을 통해 예측할수 있는 수치의 정도가 더 정확
-
 
 	# pandas dataframe의 데이터를 pickle 파일로 저장하기
 	import pickle
