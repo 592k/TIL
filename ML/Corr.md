@@ -5,21 +5,21 @@
 - 편차제곱의 평균
 $ variance = \frac{\sum_{i=1}^n{(x_i-\bar{x})^2}}{n}, (\bar{x}:평균) $
 
+'''pyton
+def variance(data):
 
-	def variance(data):
-	
-		avg = np.average(data)
-		var = 0
-		for num in data:
-			var += (num - avg) ** 2
-		return var / len(data)
+	avg = np.average(data)
+	var = 0
+	for num in data:
+		var += (num - avg) ** 2
+	return var / len(data)
 
-	variance(data)
-	variance(data) ** 0.5
+variance(data)
+variance(data) ** 0.5
 
-	np.var(data)
-	np.std(data)
-
+np.var(data)
+np.std(data)
+'''
 
 ### 3. 공분산 (covariance)
 - 평균 편차
