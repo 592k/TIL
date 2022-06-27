@@ -51,4 +51,6 @@ Deep Nuearl Networks
 3. Argmax
 	- Pick the argument that makes max value.
 	- argmin 반대
-
+### 최적화
+- 기초 최적화 방법
+	- Gradiendt Descent
